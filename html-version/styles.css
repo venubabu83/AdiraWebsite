@@ -138,7 +138,9 @@ body {
     color: var(--primary-color);
     font-size: 28px;
     cursor: pointer;
-    padding: 5px;
+    padding: 8px 12px;
+    z-index: 1001;
+    position: relative;
 }
 
 /* Hero Section */
@@ -662,7 +664,9 @@ section {
 /* Responsive */
 @media (max-width: 768px) {
     .mobile-menu-btn {
-        display: block;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
     .nav-links {
@@ -802,6 +806,22 @@ section {
         display: block !important;
         width: 100% !important;
         max-width: 100% !important;
+    }
+    
+    /* Ensure mobile menu button is always visible on mobile */
+    .nav-content {
+        position: relative;
+    }
+    
+    .mobile-menu-btn {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1001;
+        background: var(--bg-white);
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     
     /* Hero section mobile adjustments */
@@ -987,6 +1007,116 @@ section {
     .contact-grid {
         grid-template-columns: 1fr !important;
         gap: 30px !important;
+    }
+    
+    /* About page mobile */
+    .mission-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+        margin-bottom: 40px !important;
+    }
+    
+    .mission-grid .section-title {
+        text-align: center !important;
+        font-size: 24px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .mission-grid p {
+        font-size: 15px !important;
+        text-align: left;
+        line-height: 1.7 !important;
+    }
+    
+    .mission-grid .content-card {
+        padding: 20px !important;
+    }
+    
+    .mission-grid .content-card div[style*="font-size: 32px"] {
+        font-size: 28px !important;
+    }
+    
+    .mission-grid .content-card h3 {
+        font-size: 18px !important;
+    }
+    
+    .mission-grid .content-card p {
+        font-size: 14px !important;
+    }
+    
+    /* About page foundation section mobile */
+    section[style*="background: linear-gradient(to bottom"] {
+        padding: 40px 0 !important;
+    }
+    
+    /* About page content cards mobile */
+    .content-grid .content-card div[style*="font-size: 64px"] {
+        font-size: 48px !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .content-grid .content-card h3 {
+        font-size: 20px !important;
+    }
+    
+    .content-grid .content-card p {
+        font-size: 14px !important;
+    }
+    
+    /* Academy structure section mobile */
+    .content-grid .content-card h3 {
+        font-size: 20px !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .content-grid .content-card p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+    
+    /* Ensure mobile menu button is always visible on mobile */
+    .nav-content {
+        position: relative;
+    }
+    
+    .mobile-menu-btn {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1001;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-grid {
+        gap: 25px !important;
+        margin-bottom: 30px !important;
+    }
+    
+    .mission-grid .section-title {
+        font-size: 22px !important;
+    }
+    
+    .mission-grid p {
+        font-size: 14px !important;
+    }
+    
+    .mission-grid .content-card {
+        padding: 15px !important;
+    }
+    
+    .content-grid .content-card div[style*="font-size: 64px"] {
+        font-size: 40px !important;
+    }
+    
+    .content-grid .content-card h3 {
+        font-size: 18px !important;
+    }
+    
+    .mobile-menu-btn {
+        font-size: 24px;
+        padding: 6px 10px;
     }
 }
 
