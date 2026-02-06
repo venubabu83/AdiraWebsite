@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Jyothi Swarupa - Adira Badminton Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .profile-hero {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 100px 0 60px;
+            margin-top: 80px;
+            border-bottom: 4px solid var(--primary-color);
+        }
+        .profile-header {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-bottom: 40px;
+        }
+        .coach-photo {
+            width: 100%;
+            max-width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 4px solid var(--primary-color);
+        }
+        .photo-placeholder {
+            width: 100%;
+            max-width: 300px;
+            height: 400px;
+            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid var(--primary-color);
+            color: var(--text-light);
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-info h1 {
+            font-size: 42px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .profile-info .role {
+            font-size: 24px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .profile-info .education {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+        .achievement-section {
+            margin-bottom: 50px;
+        }
+        .achievement-section h2 {
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        .achievement-item {
+            background: var(--bg-white);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .achievement-item h3 {
+            color: var(--secondary-color);
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .achievement-item p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin: 0;
+        }
+        .achievement-list {
+            list-style: none;
+            padding: 0;
+        }
+        .achievement-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        .achievement-list li:last-child {
+            border-bottom: none;
+        }
+        .achievement-list li strong {
+            color: var(--secondary-color);
+        }
+        .badge {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-right: 10px;
+            margin-bottom: 8px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+        }
+        .back-link:hover {
+            color: var(--primary-dark);
+            transform: translateX(-5px);
+        }
+        .back-link::before {
+            content: '←';
+            margin-right: 8px;
+            font-size: 20px;
+        }
+        @media (max-width: 768px) {
+            .profile-header {
+                grid-template-columns: 1fr;
+            }
+            .coach-photo, .photo-placeholder {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Adira Badminton Academy Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>ADIRA</h1>
+                    <p>Badminton Academy</p>
+                </div>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="coaches.html">Coaches</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Profile Hero Section -->
+    <section class="profile-hero">
+        <div class="container">
+            <a href="coaches.html" class="back-link">Back to Coaches</a>
+            
+            <div class="profile-header">
+                <!-- Coach Photo -->
+                <div>
+                    <img src="coach-jyothi.png" alt="V Jyothi Swarupa" class="coach-photo" id="coachPhoto" onerror="handlePhotoError()">
+                    <div class="photo-placeholder" id="photoPlaceholder" style="display: none;">
+                        <div>
+                            <div style="font-size: 64px; margin-bottom: 10px;">👨‍🏫</div>
+                            <div>Coach Photo<br><small style="font-size: 12px;">(Add coach-jyothi.jpg to display photo)</small></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Profile Info -->
+                <div class="profile-info">
+                    <h1>V Jyothi Swarupa</h1>
+                    <div class="role">Current Indian Team Coach</div>
+                    <div class="education">Education: M.B.A</div>
+                    <div>
+                        <span class="badge">International Coach</span>
+                        <span class="badge">Former National Player</span>
+                        <span class="badge">World-Class Expertise</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Coaching Achievements 2023-24 -->
+            <div class="achievement-section">
+                <h2>Coaching Achievements (2023-24)</h2>
+                <div class="achievement-item">
+                    <h3>🏆 Represented Indian Team as Coach</h3>
+                    <p><strong>Li Ning Sri Lanka International Series 2024</strong> - Galle, Sri Lanka<br>
+                    Served as coach for the Senior Indian Badminton Team</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>🏆 Represented Indian Team as Coach</h3>
+                    <p><strong>Asian U15 & U17 Junior Championships</strong> - Chengdu, China (17-22 October 2023)<br>
+                    Coached the Indian Junior Team at this prestigious international championship</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>🏆 National Center of Excellence</h3>
+                    <p><strong>World Junior Team Camp</strong> - Guwahati (2-20 September 2023)<br>
+                    Served as Coach under Head Coach Park Tae Sang & Ivan Sozonov<br>
+                    Trained and developed junior talent for international competitions</p>
+                </div>
+            </div>
+
+            <!-- Coaching Achievements 2019 -->
+            <div class="achievement-section">
+                <h2>Coaching Achievements (2019)</h2>
+                <div class="achievement-item">
+                    <h3>🏆 Represented Indian Team as Coach</h3>
+                    <p><strong>Junior Asian Badminton Championships</strong> - Surabaya, Indonesia (11-15 December 2019)<br>
+                    Led the Indian Junior Team at this major Asian championship</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>🏆 National Sub-Junior Coaching Camps</h3>
+                    <p><strong>Phase II:</strong> Bangalore (28 August - 12 September 2019)<br>
+                    <strong>Phase III:</strong> Bangalore (20 September - 5 October 2019)<br>
+                    Conducted comprehensive training programs for sub-junior players</p>
+                </div>
+            </div>
+
+            <!-- Playing Career - Highest Ranks -->
+            <div class="achievement-section">
+                <h2>Playing Career - Highest Rankings</h2>
+                <ul class="achievement-list">
+                    <li><strong>India No. 7</strong> (2007-08 BAI Rankings) - Women's Doubles</li>
+                    <li><strong>India No. 4</strong> (2004-05 BAI Rankings) - U-19 Girls Doubles</li>
+                    <li><strong>Andhra Pradesh State No. 1</strong> - Years 1999, 2004, 2005</li>
+                    <li><strong>Andhra Pradesh State No. 2</strong> - Years 1998, 2000, 2003</li>
+                </ul>
+            </div>
+
+            <!-- Awards -->
+            <div class="achievement-section">
+                <h2>Awards & Recognition</h2>
+                <ul class="achievement-list">
+                    <li><strong>Bharath Sanchar Kreeda Award</strong> - Year 2007-08</li>
+                    <li><strong>Bharath Sanchar Kreeda Award</strong> - Year 2009</li>
+                    <li><strong>Bharath Sanchar Kreeda Award</strong> - Year 2015</li>
+                    <li><strong>Best Player of the Tournament</strong> - All India Senior Ranking at Sivakashi</li>
+                </ul>
+            </div>
+
+            <!-- Notable Achievements -->
+            <div class="achievement-section">
+                <h2>Notable Achievements</h2>
+                <ul class="achievement-list">
+                    <li><strong>Probable for Indian Team</strong> - U-19 Girls Doubles for Junior ABC at Malaysia (2004)</li>
+                    <li><strong>Teamed up with Saina Nehwal</strong> - 60th South Zone Inter State Badminton Championships 2004 at Bangalore: Shafiquershi Cup (Jr Girls) Winner</li>
+                    <li><strong>Multiple Andhra Pradesh State Championships</strong> - Won numerous titles in Singles and Doubles events in various age groups (U-13, U-16 & U-19)</li>
+                    <li><strong>National Games</strong> - Guwahati, Assam: Women's Doubles Quarterfinalist</li>
+                    <li><strong>All India CBSE Inter School Badminton Tournament</strong> - Dubai 2000-01: Girls Singles and Doubles Winner</li>
+                    <li><strong>1st AP State Senior Ranking</strong> - Kharimnagar: Women's Singles Gold (1st Place)</li>
+                    <li><strong>CBSE School Games</strong> - All India & South Zone Level (2000-2004): Gold medals in Girls Singles, Doubles & Team Events</li>
+                </ul>
+            </div>
+
+            <!-- National Level Performances -->
+            <div class="achievement-section">
+                <h2>National Level Performances</h2>
+                <ul class="achievement-list">
+                    <li><strong>Junior Nationals</strong> - Calicut: Bronze Medal (3rd) in U-19 Girls Doubles</li>
+                    <li><strong>All India Senior Ranking</strong> - Surat: Women's Doubles Winner, Mixed Doubles Runner-up</li>
+                    <li><strong>All India Inter University</strong> - Gwalior: Runner-up</li>
+                    <li><strong>All India Jr. Ranking</strong> - Begusarai, Bihar: U-19 Girls Doubles Winner</li>
+                    <li><strong>All India Jr Ranking</strong> - Gujarat: U-19 Girls Doubles Runner-up</li>
+                    <li><strong>All India Senior Ranking</strong> - Dehradun: Mixed Doubles Runner-up</li>
+                    <li><strong>All India Jr. Ranking</strong> - Bangalore: U-19 Girls Doubles Runner-up (Lost to Saina Nehwal & Aparna Balan in the Finals)</li>
+                    <li><strong>All India Women's Festival</strong> - Bhopal: Women's Doubles Winner</li>
+                </ul>
+            </div>
+
+            <!-- Recent Achievements 2016-18 -->
+            <div class="achievement-section">
+                <h2>Recent Achievements (2016-18)</h2>
+                <div class="achievement-item">
+                    <h3>🏆 All India BSNL Badminton Championships 2016-17</h3>
+                    <p><strong>Hyderabad:</strong><br>
+                    • Women's Singles: Winner<br>
+                    • Women's Team Event: Runner-up<br>
+                    • Mixed Doubles: Runner-up</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>🏆 All India Public Sector Tournament 2016-17</h3>
+                    <p><strong>Bengaluru:</strong><br>
+                    • Women's Singles: Third Place<br>
+                    • Women's Doubles: Third Place</p>
+                </div>
+                <div class="achievement-item">
+                    <h3>🏆 All India BSNL Badminton Championships 2018</h3>
+                    <p><strong>Bhopal:</strong><br>
+                    • Women's Singles: Winner<br>
+                    • Women's Doubles: Runner-up</p>
+                </div>
+            </div>
+
+            <!-- Coaching Philosophy -->
+            <div class="achievement-section" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 40px; border-radius: 8px;">
+                <h2 style="margin-top: 0;">Coaching Philosophy</h2>
+                <p style="color: var(--text-light); font-size: 18px; line-height: 1.8;">
+                    With extensive experience as both a national-level player and international coach, 
+                    V Jyothi Swarupa brings a unique perspective to badminton coaching. Her journey from 
+                    being India No. 7 in Women's Doubles to coaching the Indian National Team demonstrates 
+                    her deep understanding of the sport at the highest levels. She is committed to 
+                    nurturing young talent and developing players who can compete internationally, 
+                    including representing India professionally.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div style="margin-bottom: 20px;">
+                        <img src="logo.png" alt="Adira Badminton Academy Logo" style="width: 80px; height: 80px; object-fit: contain;">
+                    </div>
+                    <h3>ADIRA</h3>
+                    <p>Delivering world-class badminton coaching and nurturing young talent to compete at the highest level.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="coaches.html">Our Coaches</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Opening Soon</li>
+                        <li>8 Professional Courts</li>
+                        <li>World-Class Facilities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adira Badminton Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Handle photo placeholder display
+        function handlePhotoError() {
+            const photo = document.getElementById('coachPhoto');
+            const placeholder = document.getElementById('photoPlaceholder');
+            if (photo) photo.style.display = 'none';
+            if (placeholder) placeholder.style.display = 'flex';
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const photo = document.getElementById('coachPhoto');
+            const placeholder = document.getElementById('photoPlaceholder');
+            
+            // Check if image failed to load
+            if (photo) {
+                photo.onerror = function() {
+                    this.style.display = 'none';
+                    if (placeholder) placeholder.style.display = 'flex';
+                };
+                
+                // If image doesn't exist, show placeholder
+                if (!photo.complete || photo.naturalHeight === 0) {
+                    photo.onerror();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

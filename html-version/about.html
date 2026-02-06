@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Adira Badminton Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><img src="logo.png" alt="Adira Badminton Academy Logo"></div>
+                <div class="logo-text">
+                    <h1>ADIRA</h1>
+                    <p>Badminton Academy</p>
+                </div>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="coaches.html">Coaches</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="logo-large">
+                <img src="logo.png" alt="Adira Badminton Academy Logo">
+            </div>
+            <h1>Our Vision</h1>
+            <p>To deliver world-class badminton coaching and nurture young talent to compete at the highest level</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="content-section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 80px;">
+                <div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 24px;">Our Mission</h2>
+                    <p style="color: var(--text-light); font-size: 17px; line-height: 1.8; margin-bottom: 20px;">
+                        Adira Badminton Academy was founded by 5 passionate coaches and 3 parents, united by a shared vision: 
+                        to create a focused, high-performance environment that supports every athlete's journey toward excellence.
+                    </p>
+                    <p style="color: var(--text-light); font-size: 17px; line-height: 1.8; margin-bottom: 20px;">
+                        With deep expertise, unwavering commitment, and strong values, we aim to nurture young talent 
+                        to compete at the highest level — including representing India professionally.
+                    </p>
+                    <p style="color: var(--text-light); font-size: 17px; line-height: 1.8;">
+                        Our academy is built on the foundation of world-class coaching, state-of-the-art facilities, 
+                        and a commitment to excellence in every aspect of training.
+                    </p>
+                </div>
+                <div class="content-card">
+                    <div style="display: flex; align-items: start; gap: 16px; margin-bottom: 24px;">
+                        <div style="font-size: 32px;">🎯</div>
+                        <div>
+                            <h3 style="color: var(--primary-color); font-size: 20px; margin-bottom: 8px; font-weight: 600;">Excellence</h3>
+                            <p style="color: var(--text-light);">Striving for the highest standards in coaching and training</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 16px; margin-bottom: 24px;">
+                        <div style="font-size: 32px;">💪</div>
+                        <div>
+                            <h3 style="color: var(--primary-color); font-size: 20px; margin-bottom: 8px; font-weight: 600;">Commitment</h3>
+                            <p style="color: var(--text-light);">Unwavering dedication to every athlete's success</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 16px;">
+                        <div style="font-size: 32px;">🌟</div>
+                        <div>
+                            <h3 style="color: var(--primary-color); font-size: 20px; margin-bottom: 8px; font-weight: 600;">Expertise</h3>
+                            <p style="color: var(--text-light);">Coaches with international experience and proven track records</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="content-section" style="background: linear-gradient(to bottom, var(--black), #1a1a1a);">
+        <div class="container">
+            <h2 class="section-title">Our Foundation</h2>
+            <p class="section-subtitle">Built by passionate professionals dedicated to badminton excellence</p>
+            <div class="content-grid">
+                <div class="content-card" style="text-align: center;">
+                    <div style="font-size: 64px; margin-bottom: 16px;">👨‍🏫</div>
+                    <h3 style="font-size: 24px; color: var(--primary-color); margin-bottom: 8px; font-weight: 600;">5 Coaches</h3>
+                    <p style="color: var(--text-light);">Passionate professionals with deep expertise</p>
+                </div>
+                <div class="content-card" style="text-align: center;">
+                    <div style="font-size: 64px; margin-bottom: 16px;">👨‍👩‍👧‍👦</div>
+                    <h3 style="font-size: 24px; color: var(--primary-color); margin-bottom: 8px; font-weight: 600;">3 Parents</h3>
+                    <p style="color: var(--text-light);">Dedicated supporters of young talent</p>
+                </div>
+                <div class="content-card" style="text-align: center;">
+                    <div style="font-size: 64px; margin-bottom: 16px;">🏆</div>
+                    <h3 style="font-size: 24px; color: var(--primary-color); margin-bottom: 8px; font-weight: 600;">Shared Vision</h3>
+                    <p style="color: var(--text-light);">Unified commitment to excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Structure -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Academy Structure</h2>
+            <p class="section-subtitle">Organized management for optimal operations</p>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3 style="font-size: 24px; color: var(--primary-color); margin-bottom: 16px; font-weight: 600;">Management Committee</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">
+                        A dedicated management committee oversees the smooth operation of the academy, 
+                        ensuring all aspects run efficiently and effectively.
+                    </p>
+                </div>
+                <div class="content-card">
+                    <h3 style="font-size: 24px; color: var(--primary-color); margin-bottom: 16px; font-weight: 600;">Coaching Panel</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">
+                        Led by our Head Coach, the coaching panel consists of experienced professionals 
+                        working together to deliver comprehensive training programs.
+                    </p>
+                </div>
+                <div class="content-card">
+                    <h3 style="font-size: 24px; color: var(--primary-color); margin-bottom: 16px; font-weight: 600;">Security & Safety</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">
+                        The entire academy is covered with CCTV cameras, ensuring a safe and secure 
+                        environment for all athletes and staff.
+                    </p>
+                </div>
+                <div class="content-card">
+                    <h3 style="font-size: 24px; color: var(--primary-color); margin-bottom: 16px; font-weight: 600;">Future Tournaments</h3>
+                    <p style="color: var(--text-light); line-height: 1.8;">
+                        We plan to conduct tournaments in the future, providing competitive opportunities 
+                        for players to showcase their skills and progress.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div style="margin-bottom: 20px;">
+                        <img src="logo.png" alt="Adira Badminton Academy Logo" style="width: 80px; height: 80px; object-fit: contain;">
+                    </div>
+                    <h3>ADIRA</h3>
+                    <p>Delivering world-class badminton coaching and nurturing young talent to compete at the highest level.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="coaches.html">Our Coaches</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Opening Soon</li>
+                        <li>8 Professional Courts</li>
+                        <li>World-Class Facilities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adira Badminton Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

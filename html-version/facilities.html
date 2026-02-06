@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - Adira Badminton Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><img src="logo.png" alt="Adira Badminton Academy Logo"></div>
+                <div class="logo-text">
+                    <h1>ADIRA</h1>
+                    <p>Badminton Academy</p>
+                </div>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html" class="active">Facilities</a></li>
+                <li><a href="coaches.html">Coaches</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="logo-large">
+                <img src="logo.png" alt="Adira Badminton Academy Logo">
+            </div>
+            <h1>World-Class Facilities</h1>
+            <p>State-of-the-art infrastructure designed to support excellence in badminton training</p>
+        </div>
+    </section>
+
+    <!-- Facilities Grid -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Courts -->
+            <div style="margin-bottom: 64px;">
+                <h2 class="section-title" style="font-size: 36px; margin-bottom: 32px;">Courts</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">🏸</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">8 Professional Courts</h3>
+                        <p style="color: var(--text-light);">All courts equipped with Yonex mats for optimal performance</p>
+                    </div>
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">💡</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Latest Lighting</h3>
+                        <p style="color: var(--text-light);">State-of-the-art lighting system for perfect visibility</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training & Fitness -->
+            <div style="margin-bottom: 64px;">
+                <h2 class="section-title" style="font-size: 36px; margin-bottom: 32px;">Training & Fitness</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">💪</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Gym</h3>
+                        <p style="color: var(--text-light);">Fully equipped gymnasium for strength and conditioning</p>
+                    </div>
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">🏋️</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Fitness Training Area</h3>
+                        <p style="color: var(--text-light);">Huge dedicated space for fitness training programs</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Amenities -->
+            <div style="margin-bottom: 64px;">
+                <h2 class="section-title" style="font-size: 36px; margin-bottom: 32px;">Amenities</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">🛍️</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Yonex Pro Shop</h3>
+                        <p style="color: var(--text-light);">Official Yonex equipment and gear available on-site</p>
+                    </div>
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">👥</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Huge Gallery</h3>
+                        <p style="color: var(--text-light);">Spacious viewing gallery for spectators and events</p>
+                    </div>
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">🍽️</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Kitchen</h3>
+                        <p style="color: var(--text-light);">Fully functional kitchen for nutrition support</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accommodation -->
+            <div style="margin-bottom: 64px;">
+                <h2 class="section-title" style="font-size: 36px; margin-bottom: 32px;">Accommodation</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">🛏️</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Boys Dormitory</h3>
+                        <p style="color: var(--text-light);">Comfortable accommodation for male athletes</p>
+                    </div>
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">🛏️</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Girls Dormitory</h3>
+                        <p style="color: var(--text-light);">Safe and secure accommodation for female athletes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infrastructure -->
+            <div style="margin-bottom: 64px;">
+                <h2 class="section-title" style="font-size: 36px; margin-bottom: 32px;">Infrastructure</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">🚗</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Huge Parking Area</h3>
+                        <p style="color: var(--text-light);">Ample parking space for visitors and members</p>
+                    </div>
+                    <div class="content-card">
+                        <div style="font-size: 48px; margin-bottom: 16px;">📹</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">CCTV Coverage</h3>
+                        <p style="color: var(--text-light);">Complete security coverage throughout the academy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Section -->
+    <section class="content-section" style="background: linear-gradient(to bottom, var(--black), #1a1a1a);">
+        <div class="container">
+            <div class="content-card" style="padding: 48px; border-color: rgba(255, 215, 0, 0.3);">
+                <div style="text-align: center; margin-bottom: 32px;">
+                    <h2 class="section-title">Premium Equipment</h2>
+                    <p style="color: var(--text-light); font-size: 18px; margin-top: 16px;">
+                        We partner with Yonex, the world's leading badminton equipment brand
+                    </p>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 32px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 64px; margin-bottom: 16px;">🏸</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Yonex Mats</h3>
+                        <p style="color: var(--text-light);">
+                            All 8 courts feature professional-grade Yonex mats for optimal performance and safety
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 64px; margin-bottom: 16px;">🛍️</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Yonex Pro Shop</h3>
+                        <p style="color: var(--text-light);">
+                            Official Yonex equipment, rackets, shoes, and accessories available on-site
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div style="margin-bottom: 20px;">
+                        <img src="logo.png" alt="Adira Badminton Academy Logo" style="width: 80px; height: 80px; object-fit: contain;">
+                    </div>
+                    <h3>ADIRA</h3>
+                    <p>Delivering world-class badminton coaching and nurturing young talent to compete at the highest level.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="coaches.html">Our Coaches</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Opening Soon</li>
+                        <li>8 Professional Courts</li>
+                        <li>World-Class Facilities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adira Badminton Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

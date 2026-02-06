@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Adira Badminton Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><img src="logo.png" alt="Adira Badminton Academy Logo"></div>
+                <div class="logo-text">
+                    <h1>ADIRA</h1>
+                    <p>Badminton Academy</p>
+                </div>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="coaches.html">Coaches</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="logo-large">
+                <img src="logo.png" alt="Adira Badminton Academy Logo">
+            </div>
+            <h1>Contact Us</h1>
+            <p>Get in touch with us to learn more about our programs and facilities</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="content-section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px;">
+                <!-- Contact Details -->
+                <div>
+                    <h2 class="section-title" style="text-align: left; font-size: 36px; margin-bottom: 32px;">Get In Touch</h2>
+                    <div style="display: flex; flex-direction: column; gap: 24px;">
+                        <div class="content-card">
+                            <div style="display: flex; align-items: start; gap: 16px;">
+                                <div style="font-size: 32px;">📍</div>
+                                <div>
+                                    <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Location</h3>
+                                    <p style="color: var(--text-light);">
+                                        Adira Badminton Academy<br>
+                                        Opening Soon<br>
+                                        (Address to be updated)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <div style="display: flex; align-items: start; gap: 16px;">
+                                <div style="font-size: 32px;">📞</div>
+                                <div>
+                                    <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Phone</h3>
+                                    <p style="color: var(--text-light);">
+                                        Contact details coming soon
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <div style="display: flex; align-items: start; gap: 16px;">
+                                <div style="font-size: 32px;">✉️</div>
+                                <div>
+                                    <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Email</h3>
+                                    <p style="color: var(--text-light);">
+                                        Email address coming soon
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <div style="display: flex; align-items: start; gap: 16px;">
+                                <div style="font-size: 32px;">⏰</div>
+                                <div>
+                                    <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Opening</h3>
+                                    <p style="color: var(--text-light);">
+                                        Opening in less than a month
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div>
+                    <h2 class="section-title" style="text-align: left; font-size: 36px; margin-bottom: 32px;">Find Us</h2>
+                    <div class="content-card">
+                        <div style="aspect-ratio: 16/9; background: #1a1a1a; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+                            <div style="text-align: center; padding: 32px;">
+                                <div style="font-size: 64px; margin-bottom: 16px;">🗺️</div>
+                                <p style="color: var(--text-light); margin-bottom: 16px;">
+                                    Google Map will be embedded here
+                                </p>
+                                <p style="color: var(--text-light); font-size: 12px;">
+                                    To add Google Maps, replace this section with an iframe embed code from Google Maps.
+                                    <br><br>
+                                    Example: &lt;iframe src="https://www.google.com/maps/embed?pb=..."&gt;&lt;/iframe&gt;
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <p style="color: var(--text-light); font-size: 14px; margin-bottom: 8px;">
+                                <strong style="color: var(--primary-color);">Note:</strong> Replace the placeholder above with your actual Google Maps embed code. 
+                                You can get the embed code by:
+                            </p>
+                            <ol style="color: var(--text-light); font-size: 12px; padding-left: 20px; line-height: 1.8;">
+                                <li>Go to Google Maps and search for your location</li>
+                                <li>Click "Share" → "Embed a map"</li>
+                                <li>Copy the iframe code and paste it in the contact page</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Info -->
+    <section class="content-section" style="background: linear-gradient(to bottom, var(--black), #1a1a1a);">
+        <div class="container">
+            <div class="content-card" style="padding: 48px; border-color: rgba(255, 215, 0, 0.3);">
+                <div style="text-align: center;">
+                    <h2 class="section-title" style="margin-bottom: 24px;">Ready to Join Us?</h2>
+                    <p style="color: var(--text-light); font-size: 18px; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        We're opening soon and excited to welcome aspiring badminton champions. 
+                        Stay tuned for registration details and opening announcements.
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; margin-bottom: 12px;">🏸</div>
+                            <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 8px;">8 Courts</h3>
+                            <p style="color: var(--text-light); font-size: 14px;">Professional training facilities</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; margin-bottom: 12px;">👨‍🏫</div>
+                            <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 8px;">Expert Coaches</h3>
+                            <p style="color: var(--text-light); font-size: 14px;">World-class coaching team</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; margin-bottom: 12px;">🏆</div>
+                            <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 8px;">Excellence</h3>
+                            <p style="color: var(--text-light); font-size: 14px;">Pathway to professional success</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div style="margin-bottom: 20px;">
+                        <img src="logo.png" alt="Adira Badminton Academy Logo" style="width: 80px; height: 80px; object-fit: contain;">
+                    </div>
+                    <h3>ADIRA</h3>
+                    <p>Delivering world-class badminton coaching and nurturing young talent to compete at the highest level.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="coaches.html">Our Coaches</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Opening Soon</li>
+                        <li>8 Professional Courts</li>
+                        <li>World-Class Facilities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adira Badminton Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

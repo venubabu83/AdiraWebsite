@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Coaches - Adira Badminton Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><img src="logo.png" alt="Adira Badminton Academy Logo"></div>
+                <div class="logo-text">
+                    <h1>ADIRA</h1>
+                    <p>Badminton Academy</p>
+                </div>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="coaches.html" class="active">Coaches</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="logo-large">
+                <img src="logo.png" alt="Adira Badminton Academy Logo">
+            </div>
+            <h1>Our Coaches</h1>
+            <p>World-class coaching expertise with international experience and proven track records</p>
+        </div>
+    </section>
+
+    <!-- Coaches Grid -->
+    <section class="content-section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 32px;">
+                <!-- Coach 1: V Jyothi Swarupa -->
+                <div class="content-card" style="cursor: pointer; transition: all 0.3s;" onclick="window.location.href='coach-profile-jyothi.html'" onmouseover="this.style.borderColor='var(--primary-color)'; this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)'">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+                        <div>
+                            <h2 style="font-size: 24px; color: var(--primary-color); margin-bottom: 4px;">V Jyothi Swarupa</h2>
+                            <p style="color: var(--text-light);">Current Indian Team Coach</p>
+                        </div>
+                        <div style="font-size: 48px;">👨‍🏫</div>
+                    </div>
+                    <p style="font-size: 14px; color: var(--text-light); margin-bottom: 24px;">Education: M.B.A</p>
+                    
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 12px;">Key Highlights</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Current Indian Team Coach</span>
+                            </li>
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Former National Level Player (India No. 7)</span>
+                            </li>
+                            <li style="display: flex; align-items: start;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Extensive International Coaching Experience</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 12px;">Recent Achievements</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Coached Indian Team - Li Ning Sri Lanka International Series 2024</span>
+                            </li>
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Coached Indian Team - Asian U15 & U17 Junior Championships 2023</span>
+                            </li>
+                            <li style="display: flex; align-items: start;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">National Center of Excellence Coach - World Junior Team Camp</span>
+                            </li>
+                        </ul>
+                        <a href="coach-profile-jyothi.html" style="display: inline-block; margin-top: 16px; color: var(--primary-color); font-weight: 600; text-decoration: none; font-size: 14px;">
+                            View Full Profile →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coach 2: Head Coach -->
+                <div class="content-card">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+                        <div>
+                            <h2 style="font-size: 24px; color: var(--primary-color); margin-bottom: 4px;">Current Indian Team Coach</h2>
+                            <p style="color: var(--text-light);">Head Coach</p>
+                        </div>
+                        <div style="font-size: 48px;">👨‍🏫</div>
+                    </div>
+                    <p style="font-size: 14px; color: var(--text-light); margin-bottom: 24px;">Education: Professional Badminton Coach</p>
+                    
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 12px;">Key Highlights</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Highest Level Coaching Credentials</span>
+                            </li>
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">International Tournament Experience</span>
+                            </li>
+                            <li style="display: flex; align-items: start;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Elite Player Development</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 12px;">Achievements</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Current Coach of Indian National Badminton Team</span>
+                            </li>
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">International Level Coaching Experience</span>
+                            </li>
+                            <li style="display: flex; align-items: start;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Trained Multiple National Champions</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coach 3 -->
+                <div class="content-card">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+                        <div>
+                            <h2 style="font-size: 24px; color: var(--primary-color); margin-bottom: 4px;">International Representative Coach</h2>
+                            <p style="color: var(--text-light);">Senior Coach</p>
+                        </div>
+                        <div style="font-size: 48px;">👨‍🏫</div>
+                    </div>
+                    <p style="font-size: 14px; color: var(--text-light); margin-bottom: 24px;">Education: Professional Badminton Coach</p>
+                    
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 12px;">Key Highlights</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">International Playing Experience</span>
+                            </li>
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Professional Training Expertise</span>
+                            </li>
+                            <li style="display: flex; align-items: start;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Championship Winning Record</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 12px;">Achievements</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Represented India at International Level</span>
+                            </li>
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Extensive Training Experience</span>
+                            </li>
+                            <li style="display: flex; align-items: start;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Multiple Championship Wins</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coach 4 -->
+                <div class="content-card">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+                        <div>
+                            <h2 style="font-size: 24px; color: var(--primary-color); margin-bottom: 4px;">Experienced Training Coach</h2>
+                            <p style="color: var(--text-light);">Coach</p>
+                        </div>
+                        <div style="font-size: 48px;">👨‍🏫</div>
+                    </div>
+                    <p style="font-size: 14px; color: var(--text-light); margin-bottom: 24px;">Education: Professional Badminton Coach</p>
+                    
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 12px;">Key Highlights</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Proven Training Methods</span>
+                            </li>
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Player Development Focus</span>
+                            </li>
+                            <li style="display: flex; align-items: start;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Technical Expertise</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 12px;">Achievements</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Years of Training Experience</span>
+                            </li>
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Developed Multiple Talented Players</span>
+                            </li>
+                            <li style="display: flex; align-items: start;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Specialized Training Programs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coach 5 -->
+                <div class="content-card">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+                        <div>
+                            <h2 style="font-size: 24px; color: var(--primary-color); margin-bottom: 4px;">Expert Badminton Coach</h2>
+                            <p style="color: var(--text-light);">Coach</p>
+                        </div>
+                        <div style="font-size: 48px;">👨‍🏫</div>
+                    </div>
+                    <p style="font-size: 14px; color: var(--text-light); margin-bottom: 24px;">Education: Professional Badminton Coach</p>
+                    
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 12px;">Key Highlights</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Youth Training Expertise</span>
+                            </li>
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Performance Enhancement</span>
+                            </li>
+                            <li style="display: flex; align-items: start;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">✓</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Technical Mastery</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 style="font-size: 18px; color: var(--primary-color); margin-bottom: 12px;">Achievements</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Comprehensive Coaching Experience</span>
+                            </li>
+                            <li style="display: flex; align-items: start; margin-bottom: 8px;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Youth Development Specialist</span>
+                            </li>
+                            <li style="display: flex; align-items: start;">
+                                <span style="color: var(--primary-color); margin-right: 8px;">🏆</span>
+                                <span style="color: var(--text-light); font-size: 14px;">Performance Optimization</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaching Philosophy -->
+    <section class="content-section" style="background: linear-gradient(to bottom, var(--black), #1a1a1a);">
+        <div class="container">
+            <div class="content-card" style="padding: 48px; border-color: rgba(255, 215, 0, 0.3);">
+                <div style="text-align: center; margin-bottom: 32px;">
+                    <h2 class="section-title">Coaching Philosophy</h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px; margin-bottom: 16px;">🎯</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Excellence</h3>
+                        <p style="color: var(--text-light); font-size: 14px;">
+                            Striving for the highest standards in every training session
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px; margin-bottom: 16px;">💡</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Expertise</h3>
+                        <p style="color: var(--text-light); font-size: 14px;">
+                            Leveraging international experience and proven methodologies
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px; margin-bottom: 16px;">🌟</div>
+                        <h3 style="font-size: 20px; color: var(--primary-color); margin-bottom: 8px;">Development</h3>
+                        <p style="color: var(--text-light); font-size: 14px;">
+                            Nurturing talent from beginner to professional level
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div style="margin-bottom: 20px;">
+                        <img src="logo.png" alt="Adira Badminton Academy Logo" style="width: 80px; height: 80px; object-fit: contain;">
+                    </div>
+                    <h3>ADIRA</h3>
+                    <p>Delivering world-class badminton coaching and nurturing young talent to compete at the highest level.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="coaches.html">Our Coaches</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Opening Soon</li>
+                        <li>8 Professional Courts</li>
+                        <li>World-Class Facilities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adira Badminton Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

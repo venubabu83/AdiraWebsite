@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adira Badminton Academy - World-Class Coaching & Excellence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Adira Badminton Academy Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>ADIRA</h1>
+                    <p>Badminton Academy</p>
+                </div>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="coaches.html">Coaches</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image Carousel -->
+    <section class="hero" style="padding: 0; margin-top: 80px;">
+        <div class="container" style="max-width: 100%; padding: 0;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; min-height: 500px;">
+                <!-- Image Carousel -->
+                <div class="carousel-container" style="position: relative;">
+                    <div class="carousel-slide active">
+                        <img src="https://via.placeholder.com/600x500/2c3e50/ffffff?text=Court+1" alt="Badminton Court" style="width: 100%; height: 500px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://via.placeholder.com/600x500/34495e/ffffff?text=Court+2" alt="Badminton Court" style="width: 100%; height: 500px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://via.placeholder.com/600x500/3498db/ffffff?text=Training" alt="Training Session" style="width: 100%; height: 500px; object-fit: cover;">
+                    </div>
+                    <button class="carousel-controls carousel-prev" onclick="changeSlide(-1)">‹</button>
+                    <button class="carousel-controls carousel-next" onclick="changeSlide(1)">›</button>
+                    <div class="carousel-indicators">
+                        <span class="carousel-indicator active" onclick="currentSlide(1)"></span>
+                        <span class="carousel-indicator" onclick="currentSlide(2)"></span>
+                        <span class="carousel-indicator" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+                
+                <!-- Hero Content -->
+                <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 60px 40px; display: flex; flex-direction: column; justify-content: center;">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <div class="logo-circle" style="width: 150px; height: 150px; margin: 0 auto 20px;">
+                            <img src="logo.png" alt="Adira Badminton Academy Logo" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <h1 style="font-size: 42px; font-weight: 800; color: var(--primary-color); margin-bottom: 10px; letter-spacing: 2px;">ADIRA</h1>
+                        <h2 style="font-size: 24px; font-weight: 600; color: var(--secondary-color); margin-bottom: 20px;">Badminton Academy</h2>
+                        <p style="font-size: 18px; color: var(--text-light); line-height: 1.8;">
+                            World-class badminton coaching and nurturing young talent to compete at the highest level — including representing India professionally.
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <a href="about.html" class="btn btn-primary" style="margin-right: 15px;">Learn More</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courts Section -->
+    <section style="background-color: var(--bg-light); padding: 60px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                <div>
+                    <h2 style="font-size: 32px; color: var(--primary-color); margin-bottom: 20px; font-weight: 700;">8 Professional Courts</h2>
+                    <hr style="border: none; border-top: 3px solid var(--primary-color); width: 80px; margin-bottom: 20px;">
+                    <p style="color: var(--text-light); line-height: 1.8; font-size: 16px;">
+                        Our state-of-the-art academy houses 8 spectacular courts equipped with Yonex mats and latest lighting technology. 
+                        When you walk in and see the courts stretched out in front of you, denying the urge to pick up a racket yourself is next to impossible.
+                        In addition, we have a huge viewing gallery for the audience to cheer on the players during tournaments.
+                    </p>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="https://via.placeholder.com/600x400/2c3e50/ffffff?text=Courts+View" alt="Courts" style="border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section style="padding: 60px 0; background-color: var(--bg-white);">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive badminton training and facilities for players at every level</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div class="service-card">
+                    <div style="font-size: 64px; margin-bottom: 15px;">👨‍🏫</div>
+                    <h4>Coaching</h4>
+                    <p>Professional coaching for players from beginners to professionals. We offer training programs for all age groups.</p>
+                    <a href="coaches.html">More..</a>
+                </div>
+                <div class="service-card">
+                    <div style="font-size: 64px; margin-bottom: 15px;">🏸</div>
+                    <h4>Memberships</h4>
+                    <p>Various membership options available including professional, semi-professional, regular players, and health badminton memberships.</p>
+                    <a href="contact.html">More..</a>
+                </div>
+                <div class="service-card">
+                    <div style="font-size: 64px; margin-bottom: 15px;">⏰</div>
+                    <h4>Hourly Bookings</h4>
+                    <p>Pre-booking and on-site booking available for general public. Book your court time in advance.</p>
+                    <a href="contact.html">More..</a>
+                </div>
+                <div class="service-card">
+                    <div style="font-size: 64px; margin-bottom: 15px;">🏆</div>
+                    <h4>Tournaments</h4>
+                    <p>We host tournaments throughout the year. Stay tuned for upcoming events and competitions.</p>
+                    <a href="contact.html">More..</a>
+                </div>
+                <div class="service-card">
+                    <div style="font-size: 64px; margin-bottom: 15px;">💪</div>
+                    <h4>Gym</h4>
+                    <p>We have a well-equipped gymnasium for strength and conditioning to complement your badminton training.</p>
+                    <a href="facilities.html">More..</a>
+                </div>
+                <div class="service-card">
+                    <div style="font-size: 64px; margin-bottom: 15px;">🛍️</div>
+                    <h4>Yonex Pro Shop</h4>
+                    <p>Official Yonex Pro Shop on-site. We carry all badminton products from rackets to accessories.</p>
+                    <a href="facilities.html">More..</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs -->
+    <section style="background-color: var(--bg-light); padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">Training Programs</h2>
+            <p class="section-subtitle">Comprehensive training programs for players at every level</p>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>Professional</h3>
+                    <span class="program-badge">Elite</span>
+                </div>
+                <div class="program-card">
+                    <h3>Semi Professional</h3>
+                    <span class="program-badge">Advanced</span>
+                </div>
+                <div class="program-card">
+                    <h3>Regular Players</h3>
+                    <span class="program-badge">Intermediate</span>
+                </div>
+                <div class="program-card">
+                    <h3>Beginners</h3>
+                    <span class="program-badge">Foundation</span>
+                </div>
+                <div class="program-card">
+                    <h3>Health Badminton</h3>
+                    <span class="program-badge">Membership</span>
+                </div>
+                <div class="program-card">
+                    <h3>General Public</h3>
+                    <span class="program-badge">Hourly Booking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section style="padding: 60px 0; background-color: var(--bg-white);">
+        <div class="container">
+            <h2 class="section-title">Why Choose Adira?</h2>
+            <p class="section-subtitle">A focused, high-performance environment supporting every athlete's journey toward excellence</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏸</div>
+                    <h3>8 Professional Courts</h3>
+                    <p>All courts equipped with Yonex mats and latest lighting technology for optimal training conditions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Expert Coaches</h3>
+                    <p>Coaches with international experience, including current Indian team coach and former national players</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>World-Class Facilities</h3>
+                    <p>Yonex Pro Shop, Gym, Gallery, Dormitories, and comprehensive fitness training areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="section-title">Opening Soon</h2>
+            <p class="cta-text">Join us in less than a month as we open our doors to aspiring badminton champions</p>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div style="margin-bottom: 20px;">
+                        <img src="logo.png" alt="Adira Badminton Academy Logo" style="width: 80px; height: 80px; object-fit: contain;">
+                    </div>
+                    <h3>ADIRA</h3>
+                    <p>Delivering world-class badminton coaching and nurturing young talent to compete at the highest level.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="coaches.html">Our Coaches</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Opening Soon</li>
+                        <li>8 Professional Courts</li>
+                        <li>World-Class Facilities</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adira Badminton Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Carousel functionality
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.carousel-indicator');
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            if (index >= slides.length) currentSlideIndex = 0;
+            if (index < 0) currentSlideIndex = slides.length - 1;
+            
+            slides[currentSlideIndex].classList.add('active');
+            if (indicators[currentSlideIndex]) {
+                indicators[currentSlideIndex].classList.add('active');
+            }
+        }
+
+        function changeSlide(direction) {
+            currentSlideIndex += direction;
+            showSlide(currentSlideIndex);
+        }
+
+        function currentSlide(index) {
+            currentSlideIndex = index - 1;
+            showSlide(currentSlideIndex);
+        }
+
+        // Auto-play carousel
+        setInterval(() => {
+            currentSlideIndex++;
+            showSlide(currentSlideIndex);
+        }, 5000);
+    </script>
+</body>
+</html>

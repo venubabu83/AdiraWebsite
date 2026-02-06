@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --gold-primary: #ffd700;
+  --gold-dark: #cc9900;
+  --silver-primary: #c0c0c0;
+  --silver-dark: #808080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600;
+  }
+  
+  .text-gradient-silver {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-silver-300 via-silver-400 to-silver-500;
+  }
+  
+  .border-gradient {
+    @apply border-2 border-transparent bg-gradient-to-r from-gold-500 to-silver-500 bg-clip-border;
+  }
+  
+  .bg-pattern {
+    background-image: 
+      radial-gradient(circle at 2px 2px, rgba(255, 215, 0, 0.1) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ffd700, #cc9900);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #cc9900, #997300);
+}
