@@ -744,6 +744,187 @@ section {
     .carousel-next {
         right: 10px;
     }
+    
+    /* Homepage hero section mobile */
+    .hero-grid {
+        grid-template-columns: 1fr !important;
+        min-height: auto !important;
+    }
+    
+    .hero-grid .carousel-container {
+        min-height: 300px !important;
+    }
+    
+    .hero-grid .carousel-slide img {
+        height: 300px !important;
+    }
+    
+    .hero-content-section {
+        padding: 40px 20px !important;
+    }
+    
+    .hero-content-section h1 {
+        font-size: 32px !important;
+    }
+    
+    .hero-content-section h2 {
+        font-size: 20px !important;
+    }
+    
+    .hero-content-section p {
+        font-size: 16px !important;
+    }
+    
+    .hero-content-section .logo-circle {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    
+    .hero-content-section .btn {
+        margin: 5px !important;
+        display: inline-block;
+    }
+    
+    /* Courts section mobile */
+    .courts-section-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+    
+    .courts-section-grid h2 {
+        font-size: 28px !important;
+        text-align: center;
+    }
+    
+    .courts-section-grid hr {
+        margin: 0 auto 20px !important;
+    }
+    
+    .courts-section-grid p {
+        text-align: center;
+    }
+    
+    /* Services grid mobile */
+    .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    /* Service cards mobile */
+    .service-card {
+        margin-bottom: 20px;
+    }
+    
+    /* Programs grid mobile */
+    .program-card {
+        padding: 20px;
+    }
+    
+    /* Page hero mobile */
+    .page-hero {
+        padding: 40px 0 !important;
+    }
+    
+    .page-hero h1 {
+        font-size: 32px !important;
+    }
+    
+    .page-hero p {
+        font-size: 16px !important;
+    }
+    
+    /* Content sections mobile */
+    .content-section {
+        padding: 40px 0 !important;
+    }
+    
+    .content-card {
+        padding: 25px !important;
+    }
+    
+    /* Footer mobile */
+    .footer {
+        padding: 40px 0 20px !important;
+    }
+    
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: 20px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .section-subtitle {
+        font-size: 15px;
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .feature-card {
+        padding: 25px 20px;
+    }
+    
+    .feature-icon {
+        font-size: 40px;
+    }
+    
+    .program-card {
+        padding: 15px;
+    }
+    
+    .program-card h3 {
+        font-size: 16px;
+    }
+    
+    .service-card {
+        padding: 15px;
+    }
+    
+    .service-card h4 {
+        font-size: 18px;
+    }
+    
+    .page-hero h1 {
+        font-size: 28px !important;
+    }
+    
+    .content-card {
+        padding: 20px !important;
+    }
+    
+    /* Coaches page mobile */
+    .coaches-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .coaches-grid .content-card {
+        min-width: auto !important;
+    }
+    
+    /* Contact page mobile */
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
 }
 
 /* Scrollbar */
